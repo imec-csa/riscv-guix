@@ -1,0 +1,47 @@
+diff -ruN a/isa/rv64ui/add_negative.S b/isa/rv64ui/add_negative.S
+--- a/isa/rv64ui/add_negative.S	1970-01-01 01:00:00.000000000 +0100
++++ b/isa/rv64ui/add_negative.S	2026-05-27 15:00:49.242241498 +0200
+@@ -0,0 +1,33 @@
++# See LICENSE for license details.
++
++#*****************************************************************************
++# add_negative.S
++#-----------------------------------------------------------------------------
++#
++# Negative test for add instruction - intentionally wrong expected values
++#
++
++#include "riscv_test.h"
++#include "test_macros.h"
++
++RVTEST_RV64U
++RVTEST_CODE_BEGIN
++
++  #-------------------------------------------------------------
++  # Arithmetic tests - WRONG expected values to cause FAIL
++  #-------------------------------------------------------------
++
++  TEST_RR_OP( 2,  add, 0x00000001, 0x00000000, 0x00000000 );
++  TEST_RR_OP( 3,  add, 0x00000003, 0x00000001, 0x00000001 );
++  TEST_RR_OP( 4,  add, 0x0000000a, 0x00000003, 0x00000007 );
++
++  TEST_PASSFAIL
++
++RVTEST_CODE_END
++
++  .data
++RVTEST_DATA_BEGIN
++
++  TEST_DATA
++
++RVTEST_DATA_END
+diff -ruN a/isa/rv64ui/Makefrag b/isa/rv64ui/Makefrag
+--- a/isa/rv64ui/Makefrag	2026-05-27 15:00:49.242241498 +0200
++++ b/isa/rv64ui/Makefrag	2026-05-27 15:00:49.242241498 +0200
+@@ -24,3 +24,6 @@
+ 
+ rv64ui_p_tests = $(addprefix rv64ui-p-, $(rv64ui_sc_tests))
+ rv64ui_v_tests = $(addprefix rv64ui-v-, $(rv64ui_sc_tests))
++
++# Negative tests (expected to FAIL)
++rv64ui_sc_tests += add_negative

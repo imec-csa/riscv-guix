@@ -1,0 +1,4 @@
+(channel
+  (version 0)
+  (branch "refactor")
+  (url "https://github.imec.be/anmol96/guix-cva6.git"))

@@ -15,7 +15,7 @@ This repository is a [Guix channel](https://guix.gnu.org/manual/en/html_node/Cha
 
 ### Option 1: Add to your channels.scm
 
-Copy `channels.scm.example` to `~/.config/guix/channels.scm`, or merge it with your existing channels file:
+Copy `channels.scm` to `~/.config/guix/channels.scm`, or merge it with your existing channels file:
 
 ```scheme
 (list

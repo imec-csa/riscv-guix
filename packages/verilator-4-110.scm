@@ -1,5 +1,5 @@
 (define-module (packages verilator-4-110)
-  #:use-module (gnu packages electronics)
+  #:use-module (gnu packages fpga)
   #:use-module (guix packages)
   #:use-module (guix git-download)
   #:use-module (guix utils)

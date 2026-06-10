@@ -29,7 +29,7 @@
   #:use-module (gnu packages boost)
   #:use-module (gnu packages compression)
   #:use-module (gnu packages cpp)
-  #:use-module (gnu packages electronics)
+  #:use-module (gnu packages fpga)
   #:use-module (gnu packages engineering)
   #:use-module (gnu packages graphviz)
   #:use-module (gnu packages image)

@@ -197,16 +197,6 @@ qemu-system-riscv64 -nographic -machine spike -bios none \
   -d in_asm,cpu,exec,nochain -D trace.log </dev/null
 ```
 
-**See `QEMU-DEBUG-GUIDE.md` for complete QEMU debugging documentation.**
-
-## Documentation
-
-- **README.md** (this file) - Main documentation
-- **QEMU-DEBUG-GUIDE.md** - Complete guide to QEMU debug options
-- **QEMU-QUICK-START.txt** - Quick reference for disassembly viewing
-- **BUGFIX-SUMMARY.md** - Details of QEMU stdin bug and fix
-- **ARCHITECTURE.md** - Original CVA6 build documentation
-
 ## Contributing / Adding More Tests
 
 To add more tests:

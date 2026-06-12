@@ -75,12 +75,6 @@
         (commit
           "b8c13cd2c8e3fec32facdf64c57e74e1461398a7"))
       (channel
-        (name 'hal)
-        (url "https://github.imec.be/CSA/hal-guix.git")
-        (branch "master")
-        (commit
-          "24cdc497d2538b98005455b2026876fc2146858d"))
-      (channel
         (name 'guix-science-nonfree)
         (url "https://codeberg.org/guix-science/guix-science-nonfree.git")
         (branch "master")

@@ -23,11 +23,13 @@ Copy `channels.scm` to `~/.config/guix/channels.scm`, or merge it with your exis
   (name 'guix)
   (url "https://git.guix.gnu.org/guix.git")
   (branch "master")
+  (commit
+   "c1604c4c9578665e059b84fbec6257b6d168c6a2")
   (introduction
-    (make-channel-introduction
-      "9edb3f66fd807b096b48283debdcddccfea34bad"
-      (openpgp-fingerprint
-       "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 61AF 2A30 8831"))))
+   (make-channel-introduction
+    "9edb3f66fd807b096b48283debdcddccfea34bad"
+    (openpgp-fingerprint
+     "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 6DF2 A33A 54FA"))))
  (channel
   (name 'riscv-guix)
   (url "https://github.com/imec-CSA/riscv-guix.git")

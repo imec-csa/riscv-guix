@@ -29,9 +29,9 @@ Copy `channels.scm` to `~/.config/guix/channels.scm`, or merge it with your exis
       (openpgp-fingerprint
        "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 61AF 2A30 8831"))))
  (channel
-  (name 'guix-cva6)
-  (url "https://github.imec.be/anmol96/guix-cva6.git")
-  (branch "refactor")))
+  (name 'riscv-guix)
+  (url "https://github.com/imec-CSA/riscv-guix.git")
+  (branch "main")))
 ```
 
 Then pull and install packages:
